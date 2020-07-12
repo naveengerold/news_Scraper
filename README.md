@@ -1,8 +1,8 @@
 # Scraper
-This a scraper which can be used to scrap data from the websites
+This a scraper which can be used to scrap data from news websites
 
 # Overview
-scraper will scrap news from news website. 
+scraper will scrap articles from news website. 
 
 # Set the limit for number of articles to download
 LIMIT = 100000
