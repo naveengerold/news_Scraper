@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import csv
 
 # Set the limit for number of articles to download
-LIMIT = 100000
+LIMIT = 10
 articles_array = []
 
 data = {}
@@ -79,7 +79,7 @@ for company, value in companies.items():
                 print(e)
                 print("continuing...")
                 continue
-            # After 10 downloaded articles from the same newspaper without publish date, the company will be skipped.
+            # After downloaded articles from the same newspaper without publish date, the company will be skipped.
 
             article = {}
             article['title'] = content.title
@@ -93,7 +93,7 @@ for company, value in companies.items():
             articles_array.append(article)
             print(count, "articles downloaded from", company, " using newspaper, url: ", content.url)
             count = count + 1
-            #noneTypeCount = 0
+            noneTypeCount = 0
     count = 1
     data['newspapers'][company] = newsPaper
 
