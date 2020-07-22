@@ -5,7 +5,7 @@ This a scraper which can be used to scrap data from news websites
 scraper will scrap articles from news website. 
 
 # Set the limit for number of articles to download
-LIMIT = 100000
+LIMIT = 10
 articles_array = []
 
 # Loads the JSON files with news sites
